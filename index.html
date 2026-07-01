@@ -178,6 +178,49 @@
             margin: 0;
             color: #cccccc;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            overflow-x: hidden;
+        }
+
+        /* Better menu button position on small screens */
+        @media (max-width: 767px) {
+            .menu-toggle {
+                top: 16px;
+                right: 16px;
+            }
+
+            nav {
+                width: 220px;
+                right: -220px;
+            }
+
+            /* Contacts in one column on mobile */
+            .contact-info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .contact-item {
+                display: flex;
+                align-items: center;
+                margin: 0;
+            }
+
+            .contact-item a {
+                overflow-wrap: anywhere;
+                word-break: break-word;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
